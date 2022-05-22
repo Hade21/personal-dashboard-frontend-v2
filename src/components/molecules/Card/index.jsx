@@ -13,10 +13,10 @@ const Card = (props) => {
   } = props;
   return (
     <div
-      className={`outer-card rounded-xl flex ${flexDir} ${width} ${height} ${outerColor}`}
+      className={`outer-card rounded-xl flex justify-between overflow-hidden ${flexDir} ${width} ${height} ${outerColor}`}
     >
       <div
-        className={`inner-card rounded-xl w-full ${innerColor} ${innerHeight}`}
+        className={`inner-card rounded-xl w-full z-10 ${innerColor} ${innerHeight}`}
       >
         {innerContent}
       </div>
