@@ -29,7 +29,7 @@ const Profile = (props) => {
     </div>
   );
   const outerContent = (
-    <div className="wrapper flex flex-col gap-2 p-7 mt- items-start">
+    <div className="wrapper flex flex-col gap-2 p-7 items-start">
       <Button type="button" onClick={toLogin}>
         Login
       </Button>
@@ -41,7 +41,6 @@ const Profile = (props) => {
 
   return (
     <Card
-      img={img}
       innerContent={innerContent}
       outerContent={outerContent}
       innerColor="bg-profile-color"

@@ -13,6 +13,7 @@ module.exports = {
         "finance-color": "rgba(255, 139, 100, 1)",
         "todo-color": "rgba(86, 194, 230, 1)",
         "article-color": "rgba(255, 94, 125, 1)",
+        "input-border": "rgba(200, 200, 200, 1)",
       },
     },
   },
