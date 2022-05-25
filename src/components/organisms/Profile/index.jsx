@@ -29,7 +29,7 @@ const Profile = (props) => {
     </div>
   );
   const outerContent = (
-    <div className="wrapper flex flex-col gap-2 p-7 items-start">
+    <div className="wrapper flex flex-col gap-2 p-7 items-start text-white">
       <Button type="button" onClick={toLogin}>
         Login
       </Button>
