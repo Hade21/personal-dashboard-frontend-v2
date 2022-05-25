@@ -44,10 +44,6 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(fullname);
-    console.log(email);
-    console.log(password);
-    console.log(cPassword);
   };
 
   const innerContent = (
