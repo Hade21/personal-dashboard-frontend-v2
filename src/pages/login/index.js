@@ -11,8 +11,7 @@ import {
   validateName,
   validatePass,
 } from "../../app/user/user";
-import { Button, Card, Typography } from "../../components";
-import Input from "../../components/atoms/Input";
+import { Button, Card, Typography, Input } from "../../components";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -56,7 +55,10 @@ const Login = () => {
       <Typography font="font-rubik" size="text-4xl" weight="font-medium">
         Login
       </Typography>
-      <form className="w-4/5 mx-auto flex flex-col justify-between h-3/5">
+      <form
+        className="w-4/5 mx-auto flex flex-col justify-between h-3/5"
+        onSubmit={handleSubmit}
+      >
         <div className="inputs flex flex-col gap-7">
           <Input
             type="text"
@@ -88,7 +90,6 @@ const Login = () => {
             disable={
               (username && password) || (email && password) ? false : true
             }
-            onClick={handleSubmit}
           >
             Login
           </Button>

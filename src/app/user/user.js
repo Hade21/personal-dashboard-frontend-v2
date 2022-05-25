@@ -10,9 +10,11 @@ const initialState = {
   username: "",
   email: "",
   password: "",
+  cPassword: "",
   validName: false,
   validEmail: false,
   validPass: false,
+  validMatch: false,
 };
 
 export const userSlice = createSlice({
@@ -43,6 +45,12 @@ export const userSlice = createSlice({
         password: action.payload,
       };
     },
+    setCPassword: (state, action) => {
+      return {
+        ...state,
+        cPassword: action.payload,
+      };
+    },
     validateName: (state, action) => {
       const valid = USER_REGEX.test(action.payload);
       return {
@@ -64,6 +72,13 @@ export const userSlice = createSlice({
         validPass: valid,
       };
     },
+    validateMatch: (state) => {
+      const valid = state.password === state.cPassword;
+      return {
+        ...state,
+        validMatch: valid,
+      };
+    },
     reset: (state) => {
       return {
         ...state,
@@ -74,6 +89,7 @@ export const userSlice = createSlice({
         validName: false,
         validEmail: false,
         validPass: false,
+        validMatch: false,
       };
     },
   },
@@ -84,9 +100,11 @@ export const {
   setUsername,
   setEmail,
   setPassword,
+  setCPassword,
   validateName,
   validateEmail,
   validatePass,
+  validateMatch,
   reset,
 } = userSlice.actions;
 export default userSlice.reducer;
