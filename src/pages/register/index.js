@@ -48,14 +48,18 @@ const Register = () => {
 
   const innerContent = (
     <div className="wrapper text-white px-7 pt-6 pb-10 flex flex-col justify-between text-left h-full">
-      <Typography font="font-rubik" size="text-4xl" weight="font-medium">
+      <Typography
+        font="font-rubik"
+        size="lg:text-4xl xl:text-5xl"
+        weight="font-medium"
+      >
         Register
       </Typography>
       <form
-        className="w-4/5 mx-auto flex flex-col justify-between gap-6"
+        className="lg:w-full xl:w-4/5 mx-auto flex xl:flex-col lg:flex-row justify-between gap-6"
         onSubmit={handleSubmit}
       >
-        <div className="inputs flex flex-col gap-7">
+        <div className="inputs lg:w-full lg:pl-4 xl:pl-0 flex flex-col gap-7">
           <Input
             type="text"
             name="fullname"
@@ -97,7 +101,7 @@ const Register = () => {
             Confirm Password
           </Input>
         </div>
-        <div className="button w-full text-center text-profile-color">
+        <div className="button lg:w-fit xl:w-full h-full flex items-center justify-center text-center text-profile-color">
           <Button
             type="submit"
             px="px-6"
@@ -118,11 +122,19 @@ const Register = () => {
     </div>
   );
   const outerContent = (
-    <div className="wrapper text-white flex justify-center gap-2 mt-10 w-full italic">
-      <Typography font="font-rubik" size="text-base" weight="font-light">
+    <div className="wrapper text-white flex justify-center gap-2 mb-10 w-full italic">
+      <Typography
+        font="font-rubik"
+        size="lg:text-base xl:text-lg"
+        weight="font-light"
+      >
         Already have account?
       </Typography>
-      <Typography font="font-rubik" size="text-base" weight="font-semibold">
+      <Typography
+        font="font-rubik"
+        size="lg:text-base xl:text-lg"
+        weight="font-semibold"
+      >
         <Link to="/login" className="not-italic">
           Sign In
         </Link>
@@ -134,11 +146,11 @@ const Register = () => {
     <main className="w-screen h-screen bg-home-color flex justify-center items-center">
       <Card
         flexDir="flex-col"
-        width="w-1/3"
-        height="h-5/6"
+        width="lg:w-1/2 xl:w-1/3"
+        height="lg:h-[95%] xl:h-5/6"
         outerColor="bg-card-color"
         innerColor="bg-profile-color"
-        innerHeight="h-4/5"
+        innerHeight="lg:h-5/6 xl:h-4/5"
         innerContent={innerContent}
         outerContent={outerContent}
       />

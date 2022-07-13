@@ -52,7 +52,11 @@ const Login = () => {
 
   const innerContent = (
     <div className="wrapper text-white px-7 pt-6 pb-10 flex flex-col justify-between text-left h-full">
-      <Typography font="font-rubik" size="text-4xl" weight="font-medium">
+      <Typography
+        font="font-rubik"
+        size="lg:text-4xl xl:text-5xl"
+        weight="font-medium"
+      >
         Login
       </Typography>
       <form
@@ -98,11 +102,19 @@ const Login = () => {
     </div>
   );
   const outerContent = (
-    <div className="wrapper flex justify-center gap-2 mt-10 text-white italic">
-      <Typography font="font-rubik" size="text-base" weight="font-light">
+    <div className="wrapper flex justify-center gap-2 mb-10 text-white italic">
+      <Typography
+        font="font-rubik"
+        size="lg:text-base xl:text-lg"
+        weight="font-light"
+      >
         Don't have account?
       </Typography>
-      <Typography font="font-rubik" size="text-base" weight="font-semibold">
+      <Typography
+        font="font-rubik"
+        size="lg:text-base xl:text-lg"
+        weight="font-semibold"
+      >
         <Link to="/register" className="cursor-pointer not-italic">
           Sign Up
         </Link>
