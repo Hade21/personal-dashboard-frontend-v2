@@ -19,11 +19,23 @@ const Profile = (props) => {
 
   const innerContent = (
     <div className="wrapper text-white p-7 text-left">
-      <img src={img} alt="profile" className="w-[4.5rem] rounded-full mb-12" />
-      <Typography font="font-rubik" weight="font-normal" size="text-base">
+      <img
+        src={img}
+        alt="profile"
+        className="lg:w-[4.5rem] xl:w-[5rem] rounded-full mb-12"
+      />
+      <Typography
+        font="font-rubik"
+        weight="font-normal"
+        size="lg:text-base xl:text-lg"
+      >
         Hello!
       </Typography>
-      <Typography font="font-rubik" weight="font-medium" size="text-4xl">
+      <Typography
+        font="font-rubik"
+        weight="font-medium"
+        size="lg:text-4xl xl:text-5xl"
+      >
         Guest
       </Typography>
     </div>
@@ -45,9 +57,9 @@ const Profile = (props) => {
       outerContent={outerContent}
       innerColor="bg-profile-color"
       outerColor="bg-card-color"
-      width="w-[14.75rem]"
-      height="h-[26rem]"
-      innerHeight="h-[18.125rem]"
+      width="lg:w-[14.75rem] xl:w-[15.50rem]"
+      height="lg:h-[26rem] xl:h-[28.5rem]"
+      innerHeight="lg:h-[18.125rem] xl:h-[19.125rem]"
       flexDir="flex-col"
     />
   );

@@ -7,10 +7,10 @@ const Home = () => {
       <div className="content h-full flex items-center gap-4 justify-center">
         <Profile />
         <div className="cards-wrapper text-white flex flex-col justify-between gap-14">
-          <div className="title w-4/5 mx-auto">
+          <div className="title lg:w-4/5 lg:mx-auto xl:mx-1">
             <Typography
               font="font-rubik"
-              size="text-4xl"
+              size="lg:text-4xl xl:text-5xl"
               weight="font-semibold"
             >
               Welcome to Your Personal Dashboard
@@ -18,7 +18,7 @@ const Home = () => {
           </div>
           <div className="cards flex gap-4">
             <CardContent card="finance" color="bg-finance-color" />
-            <CardContent card="todo" color="bg-todo-color" />
+            <CardContent card="notes" color="bg-todo-color" />
             <CardContent card="article" color="bg-article-color" />
           </div>
         </div>

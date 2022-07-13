@@ -6,7 +6,7 @@ const Button = (props) => {
 
   return (
     <button
-      className={`cursor-pointer font-opensans font-semibold ${textColor} text-base ${px} ${py} ${bgColor} rounded-full`}
+      className={`cursor-pointer font-opensans font-semibold ${textColor} lg:text-base xl:text-lg ${px} ${py} ${bgColor} rounded-full`}
       type={type}
       onClick={onClick}
       disabled={disable}
